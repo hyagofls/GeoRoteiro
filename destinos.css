@@ -1,0 +1,81 @@
+/* ---------- ESTILO GERAL ---------- */
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+/* Espaçamento por causa da navbar fixa */
+.secao-dest {
+  padding-top: 140px;
+  padding-bottom: 80px;
+}
+
+/* ---------- TÍTULO ---------- */
+.secao-dest h1 {
+  color: #00bfa6;
+  font-weight: 600;
+}
+
+/* ---------- CARDS ---------- */
+.card {
+  border-radius: 15px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+.img {
+  height: 180px;
+  object-fit: cover;
+}
+
+/* Botões personalizados */
+.btn-success {
+  background-color: #00bfa6;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+.btn-success:hover {
+  background-color: #008f7a;
+}
+
+/* ---------- NAVBAR ---------- */
+/* NAVBAR ESTILO PRINCIPAL — Igual à página inicial */
+.navbar-principal {
+  height: 95px; /* aumenta a barra */
+  display: flex;
+  align-items: center;
+  padding: 18px 0;
+  background-color: #ffffff !important;
+  box-shadow: 0 3px 12px rgba(0,0,0,0.08);
+}
+
+/* Logo com tamanho padronizado */
+.logo-navbar {
+  width: 50px;
+  height: auto;
+}
+
+/* Ajuste dos links */
+.nav-links .nav-link {
+  color: #333 !important;
+  margin-left: 22px;
+  font-size: 17px;
+  font-weight: 500;
+  transition: .3s ease;
+}
+
+.nav-links .nav-link:hover,
+.nav-links .nav-link.active {
+  color: #00bfa6 !important;
+}

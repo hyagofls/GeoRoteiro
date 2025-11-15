@@ -1,0 +1,297 @@
+/* navbar */
+header {
+  display: flex;                     /* Alinha logo, pesquisa e menu lado a lado */
+  align-items: center;               /* Centraliza verticalmente */
+  justify-content: space-between;    /* Espaça os 3 blocos igualmente */
+  padding: 20px 60px;                /* Espaço interno */
+  background-color: rgb(255, 255, 255);         /* Cor de fundo */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Sombra leve */
+  position: fixed;                   /* Fixa no topo da página */
+  top: 0;
+  left: 0;
+  width: 100%;                       /* Ocupa toda a largura */
+  z-index: 1000;                     /* Fica sobre o conteúdo */
+  border-radius: 0px;               /* Bordas arredondadas */
+  box-sizing: border-box;            /* Evita que padding aumente o tamanho */
+}
+
+/* Logo */
+.logo img {
+  width: 200px;
+  height: auto;
+  object-fit: contain;/* mostra a imagem inteira sem cortar */
+}
+
+/* Links principais (menu de navegação) */
+nav.menu a {
+  text-decoration: none;    /* Remove sublinhado */
+  color: #333;
+  font-weight: 600;
+  margin-left: 28px;        /* Espaço entre os links */
+  position: relative;
+  transition: color 0.25s;  /* Transição suave ao passar o mouse */
+  font-size: 20px;
+}
+
+/* Linha de destaque sob o link ao passar o mouse */
+nav.menu a::after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  bottom: -4px;
+  left: 0;
+  background-color: #0640fd;
+  transition: width 0.25s ease-in-out;
+}
+
+/* Efeito de hover (muda cor e mostra a linha) */
+nav.menu a:hover {
+  color: #053efa;
+}
+nav.menu a:hover::after {
+  width: 100%;
+}
+
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: #f8fafc;
+  color: #333;
+}
+
+/* Cabeçalho */
+.cabecalho {
+  background: #00bfa6;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+}
+
+.cabecalho h1 {
+  font-size: 1.8rem;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+nav a:hover, .ativo {
+  color: #ffe600;
+}
+
+/* Seção contato */
+.contato {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.contato h2 {
+  color: #00bfa6;
+  font-size: 2.3rem;
+  margin-bottom: 10px;
+}
+
+.contato p {
+  color: #555;
+  font-size: 1.1rem;
+  margin-bottom: 40px;
+}
+
+.form-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+/* Formulário */
+form {
+  background: #fff;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  width: 400px;
+  padding: 30px;
+  text-align: left;
+}
+
+.input-group {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+  color: #00bfa6;
+  font-weight: 600;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  outline: none;
+  font-size: 1rem;
+}
+
+input:focus, textarea:focus {
+  border-color: #00bfa6;
+}
+
+button {
+  width: 100%;
+  background: #00bfa6;
+  color: #fff;
+  border: none;
+  padding: 12px;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #009c8a;
+}
+
+/* Informações */
+.info {
+  background: #fff;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  padding: 30px;
+  text-align: left;
+}
+
+.info h3 {
+  color: #00bfa6;
+  margin-bottom: 15px;
+}
+
+.info p {
+  margin-bottom: 10px;
+  font-size: 0.95rem;
+}
+
+.info i {
+  color: #00bfa6;
+  margin-right: 8px;
+}
+
+/* Ícones das redes sociais */
+.redes {
+  display: flex;
+  gap: 15px;
+  margin-top: 15px;
+}
+
+.redes a {
+  color: #00bfa6;
+  font-size: 1.5rem;
+  transition: 0.3s;
+}
+
+.redes a:hover {
+  color: #009c8a;
+  transform: scale(1.1);
+}
+
+/* Mapa */
+.mapa {
+  margin-top: 60px;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+/* Rodapé */
+footer {
+  background: #00bfa6;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  margin-top: 60px;
+}
+
+/* Popup de sucesso */
+.popup {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(0,0,0,0.5);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.4s ease;
+}
+
+.popup.ativo {
+  opacity: 1;
+  pointer-events: all;
+}
+
+.popup-content {
+  background: #fff;
+  padding: 40px;
+  border-radius: 15px;
+  text-align: center;
+  animation: popIn 0.5s ease;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+.popup-content i {
+  font-size: 3rem;
+  color: #00bfa6;
+  margin-bottom: 15px;
+}
+
+.popup-content h3 {
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.popup-content p {
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.popup-content button {
+  background: #00bfa6;
+  color: white;
+  border: none;
+  padding: 10px 25px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.popup-content button:hover {
+  background: #009c8a;
+}
+
+@keyframes popIn {
+  from { transform: scale(0.8); opacity: 0; }
+  to { transform: scale(1); opacity: 1; }
+}
+

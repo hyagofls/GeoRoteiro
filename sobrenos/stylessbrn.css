@@ -1,0 +1,184 @@
+/*navbar*/
+header {
+  display: flex;                     /* Alinha logo, pesquisa e menu lado a lado */
+  align-items: center;               /* Centraliza verticalmente */
+  justify-content: space-between;    /* Espaça os 3 blocos igualmente */
+  padding: 20px 60px;                /* Espaço interno */
+  background-color: rgb(255, 255, 255);         /* Cor de fundo */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Sombra leve */
+  position: fixed;                   /* Fixa no topo da página */
+  top: 0;
+  left: 0;
+  width: 100%;                       /* Ocupa toda a largura */
+  z-index: 1000;                     /* Fica sobre o conteúdo */
+  border-radius: 0px;               /* Bordas arredondadas */
+  box-sizing: border-box;            /* Evita que padding aumente o tamanho */
+}
+
+/* Links principais (menu de navegação) */
+nav.menu a {
+  text-decoration: none;    /* Remove sublinhado */
+  color: #333;
+  font-weight: 600;
+  margin-left: 28px;        /* Espaço entre os links */
+  position: relative;
+  transition: color 0.25s;  /* Transição suave ao passar o mouse */
+  font-size: 20px;
+}
+
+/* Linha de destaque sob o link ao passar o mouse */
+nav.menu a::after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  bottom: -4px;
+  left: 0;
+  background-color: #0640fd;
+  transition: width 0.25s ease-in-out;
+}
+
+/* Efeito de hover (muda cor e mostra a linha) */
+nav.menu a:hover {
+  color: #053efa;
+}
+nav.menu a:hover::after {
+  width: 100%;
+}
+
+.logoc img {
+  width: 200px;
+  height: auto;
+  object-fit: contain;/* mostra a imagem inteira sem cortar */
+}
+
+/* === BASE === */
+body {
+  background-color: #f9f9f9;
+  font-family: 'Poppins', sans-serif;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  padding: 120px 80px; /* Espaço para navbar fixa */
+}
+
+/*SOBRE*/
+.sobre-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 60px;
+  background: linear-gradient(135deg, #f5faff, #e8fff7);
+  padding: 60px;
+  border-radius: 20px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+}
+
+.sobre-texto {
+  flex: 1;
+}
+
+.sobre-texto h1 {
+  font-size: 42px;
+  color: #00bfa6;
+  margin-bottom: 20px;
+}
+
+.sobre-texto p {
+  font-size: 18px;
+  line-height: 1.7;
+  margin-bottom: 20px;
+}
+
+.sobre-texto strong {
+  color: #008f7a;
+}
+
+.sobre-imagem {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.sobre-imagem img {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 20px;
+  object-fit: cover;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+/*VALORES*/
+.valores {
+  margin-top: 80px;
+  text-align: center;
+}
+
+.valores h2 {
+  color: #008f7a;
+  font-size: 32px;
+  margin-bottom: 30px;
+}
+
+.valores-lista {
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+  flex-wrap: wrap;
+}
+
+.valor-item {
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  padding: 30px;
+  width: 250px;
+  transition: all 0.3s ease;
+}
+
+.valor-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+}
+
+.valor-item h3 {
+  color: #00bfa6;
+  margin-bottom: 10px;
+}
+
+.valor-item p {
+  font-size: 15px;
+  line-height: 1.5;
+}
+
+/*RODAPÉ */
+footer {
+  background-color: #00bfa6;
+  color: white;
+  text-align: center;
+  padding: 25px 0;
+  margin-top: 100px;
+}
+
+/* === RESPONSIVIDADE === */
+@media (max-width: 900px) {
+  main {
+    padding: 100px 40px;
+  }
+
+  .sobre-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .sobre-imagem img {
+    max-width: 400px;
+  }
+
+  .valores-lista {
+    gap: 30px;
+  }
+}
