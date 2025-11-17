@@ -61,9 +61,10 @@ body {
 }
 
 /* Logo com tamanho padronizado */
-.logo-navbar {
-  width: 50px;
+.logo img {
+ width: 200px; /* diminuído para não ficar desproporcional */
   height: auto;
+  object-fit: contain;
 }
 
 /* Ajuste dos links */
@@ -78,4 +79,49 @@ body {
 .nav-links .nav-link:hover,
 .nav-links .nav-link.active {
   color: #00bfa6 !important;
+}
+
+header {
+  display: flex;                     
+  align-items: center;               
+  justify-content: space-between;    
+  padding: 20px 60px;  /* reduzido para melhorar equilíbrio */
+  background-color: #ffffff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  box-sizing: border-box;
+}
+
+
+/* Links do menu */
+nav.menu a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 600;
+  margin-left: 25px;
+  position: relative;
+  transition: .25s;
+  font-size: 18px; /* ajustado para harmonizar */
+}
+
+nav.menu a::after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  bottom: -4px;
+  left: 0;
+  background-color: #0640fd;
+  transition: width 0.25s ease-in-out;
+}
+
+nav.menu a:hover {
+  color: #053efa;
+}
+nav.menu a:hover::after {
+  width: 100%;
 }

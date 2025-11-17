@@ -1,0 +1,117 @@
+body {
+    padding-top: 90px; /* espaço para a navbar */
+}
+
+/* NAVBAR */
+header {
+  display: flex;                     
+  align-items: center;               
+  justify-content: space-between;    
+  padding: 20px 60px;  /* reduzido para melhorar equilíbrio */
+  background-color: #ffffff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  box-sizing: border-box;
+}
+
+.logo img {
+  width: 200px; /* diminuído para não ficar desproporcional */
+  height: auto;
+  object-fit: contain;
+}
+
+/* Links do menu */
+nav.menu a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 600;
+  margin-left: 25px;
+  position: relative;
+  transition: .25s;
+  font-size: 18px; /* ajustado para harmonizar */
+}
+
+nav.menu a::after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  bottom: -4px;
+  left: 0;
+  background-color: #0640fd;
+  transition: width 0.25s ease-in-out;
+}
+
+nav.menu a:hover {
+  color: #053efa;
+}
+nav.menu a:hover::after {
+  width: 100%;
+}
+
+/* BLOCO PRINCIPAL */
+.bloco-decolar {
+    width: 100%;
+    max-width: 1300px;
+    margin: 40px auto;
+    background: white;
+    border-radius: 14px;
+    display: flex;
+    justify-content: space-between;
+    padding: 40px;
+    gap: 40px;
+    box-shadow: 0 4px 14px rgba(0,0,0,0.08);
+}
+
+.bloco-decolar .texto {
+    width: 55%;
+}
+
+.bloco-decolar .texto h2 {
+    font-size: 28px;
+    margin-bottom: 15px;
+    color: #1a1a1a;
+}
+
+.bloco-decolar .texto p {
+    margin-bottom: 16px;
+    font-size: 16px;
+    line-height: 1.55;
+    color: #333;
+}
+
+.bloco-decolar .imagem {
+    width: 45%;
+}
+
+.bloco-decolar .imagem img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 14px;
+    border: #333 1px solid;
+}
+
+@media (max-width: 900px) {
+    .bloco-decolar {
+        flex-direction: column;
+        text-align: left;
+        padding: 25px;
+        border: 1px #333 solid;
+        border-radius: 8px;
+    }
+
+    .bloco-decolar .texto,
+    .bloco-decolar .imagem {
+        width: 100%;
+    }
+
+    .bloco-decolar .imagem img {
+        height: 280px;
+        object-fit: cover;
+    }
+}

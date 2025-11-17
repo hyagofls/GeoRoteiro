@@ -87,7 +87,7 @@ nav.menu a:hover::after {
   position: absolute;
   top: 30%;
   left: 8%;
-  color: rgb(126, 232, 196);
+  color: rgb(11, 12, 12);
   font-size: 45px; /* aumentado */
   font-weight: bold;
   font-family: 'Montserrat', sans-serif;
@@ -98,7 +98,7 @@ nav.menu a:hover::after {
   position: absolute;
   top: 48%;
   left: 8%;
-  color: rgb(126, 232, 196);
+  color: rgb(233, 240, 238);
   font-size: 22px;
   font-weight: bold;
   font-family: 'Montserrat', sans-serif;

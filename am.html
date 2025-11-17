@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazonas | GeoRoteiro</title>
+    <link rel="stylesheet" href="am.css">
+
+    <!-- ÍCONES FONT AWESOME -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <!-- NAVBAR CSS -->
+    <style>
+       header {
+  display: flex;                     
+  align-items: center;               
+  justify-content: space-between;    
+  padding: 20px 60px;  /* reduzido para melhorar equilíbrio */
+  background-color: #ffffff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  box-sizing: border-box;
+}
+
+.logo img {
+  width: 200px; /* diminuído para não ficar desproporcional */
+  height: auto;
+  object-fit: contain;
+}
+
+/* Links do menu */
+nav.menu a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 600;
+  margin-left: 25px;
+  position: relative;
+  transition: .25s;
+  font-size: 18px; /* ajustado para harmonizar */
+}
+
+nav.menu a::after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  bottom: -4px;
+  left: 0;
+  background-color: #0640fd;
+  transition: width 0.25s ease-in-out;
+}
+
+nav.menu a:hover {
+  color: #053efa;
+}
+nav.menu a:hover::after {
+  width: 100%;
+}
+
+
+    </style>
+</head>
+<body>
+
+    <!-- Navbar-->
+  <header>
+    
+    <!--Logo-->
+    <div class="logo">
+      <img src="img/logo.png" alt="">
+
+    </div>
+
+  
+
+    <!-- Menu de navegação -->
+    <nav class="menu">
+      <a href="index.html">Início</a>
+      <a href="destinos.html">Destinos</a>
+      
+      <a href="contato/contato.html">Contato</a>
+      <a href="sobrenos/sobrenos.html">Sobre Nós</a>
+    </nav>
+
+  </header>
+
+    <!-- CONTEÚDO ORIGINAL (NÃO MEXI EM NADA) -->
+    <section class="bloco-decolar">
+
+        <div class="texto">
+            <h2>Hotéis no Amazonas</h2>
+    
+            <p>
+                O Amazonas oferece hospedagens que colocam o visitante em contato direto com a grandiosidade da floresta. O Juma Amazon Lodge, localizado em meio à mata, é conhecido por seus bangalôs suspensos, trilhas, passeios ecológicos e vista impressionante do rio. A experiência é ideal para quem deseja vivenciar a natureza de forma profunda, com conforto e tranquilidade.
+            </p>
+    
+            <p>
+                Em Manaus, o Hotel Villa Amazônia se destaca por unir sofisticação e cultura. Localizado próximo ao Teatro Amazonas, o hotel oferece suítes espaçosas, piscina com pedra natural e um design que combina elementos históricos e modernos. É uma excelente opção para quem prefere ficar na área urbana, mas ainda deseja um toque regional.
+            </p>
+    
+            <p>
+                Com essas duas opções, o Amazonas apresenta desde a imersão completa na floresta até a praticidade da vida urbana. As hospedagens do estado valorizam o ecoturismo, a cultura local e a experiência única de estar em um dos biomas mais importantes do mundo.
+            </p>
+
+            <p>
+                <a href="https://maps.app.goo.gl/ZVEXcrTuFfhhMgZc7" class="icon"> 
+                    <i class="fa-regular fa-map"></i>
+                </a> Juma Amazon Lodge 
+                <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> 
+                <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> 
+                <i class="fa-regular fa-star"></i>
+            </p>
+
+            <p>
+                <a href="https://maps.app.goo.gl/63Md35iWJe9M7jvy7" class="icon"> 
+                    <i class="fa-regular fa-map"></i>
+                </a> Hotel Villa Amazônia
+                <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> 
+                <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> 
+                <i class="fa-solid fa-star"></i>
+            </p>
+
+        </div>
+    
+        <div class="imagem">
+            <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1200&q=60" alt="Floresta Amazônica">
+        </div>
+    </section>
+    
+    <br><br><br><br>
+    
+    <section class="bloco-decolar">
+
+        <div class="texto">
+            <h2>Restaurantes no Amazonas</h2>
+
+            <p>
+                A culinária amazonense encanta pela diversidade de sabores, ingredientes típicos e preparo que valoriza a identidade regional. Em frente ao Teatro Amazonas, o restaurante Caxiri reúne pratos feitos com pirarucu, tucupi, jambu e outras iguarias da floresta, sempre apresentados de forma contemporânea e criativa.
+            </p>
+
+            <p>
+                Já o Banzeiro é um dos restaurantes mais famosos da região, conhecido por sua autenticidade e pratos tradicionais como o tambaqui assado, a caldeirada e preparações com frutas típicas. O local é muito procurado tanto por turistas quanto por moradores que valorizam a gastronomia local.
+            </p>
+
+            <p>
+                Com essas duas opções, o Amazonas mostra toda a riqueza de sua culinária, que combina tradição, aromas intensos e ingredientes exclusivos da floresta. A experiência gastronômica no estado se torna um verdadeiro mergulho na cultura regional.
+            </p>
+
+            <p>
+                <a href="https://maps.app.goo.gl/5WSsKwcWrzxyvRbC7" class="icon"> 
+                    <i class="fa-regular fa-map"></i>
+                </a> Caxiri
+                <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> 
+                <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> 
+                <i class="fa-regular fa-star"></i>
+            </p>
+
+            <p>
+                <a href="https://maps.app.goo.gl/iibzGjgDgjgTf4Sy5" class="icon"> 
+                    <i class="fa-regular fa-map"></i>
+                </a> Banzeiro
+                <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> 
+                <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> 
+                <i class="fa-regular fa-star"></i>
+            </p>
+
+        </div>
+
+        <div class="imagem">
+            <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=1200&q=60" alt="Restaurante com culinária regional">
+        </div>
+
+    </section>
+
+    <br><br><br><br>
+
+    <section class="bloco-decolar">
+
+        <div class="texto">
+            <h2>Pontos turísticos</h2>
+
+            <p>
+                O Amazonas surpreende pela grandiosidade de seus cenários naturais. Um dos mais famosos é o Encontro das Águas, onde os rios Negro e Solimões correm lado a lado sem se misturar, criando um fenômeno visual impressionante. Os passeios de barco permitem observar de perto a força da natureza.
+            </p>
+
+            <p>
+                Outro destaque é o histórico Teatro Amazonas, em Manaus, construído durante o Ciclo da Borracha. Sua arquitetura imponente, pinturas europeias e cúpula composta por milhares de peças coloridas fazem dele um dos teatros mais belos do Brasil. Além disso, ele recebe espetáculos, visitas guiadas e apresentações culturais.
+            </p>
+
+            <p>
+                Esses dois pontos representam perfeitamente o Amazonas: um estado que combina natureza exuberante com história e riqueza cultural. Cada visita revela um novo aspecto da identidade amazônica.
+            </p>
+
+            <p>
+                <a href="https://maps.app.goo.gl/nkpiY59qGpN9roS26" class="icon"> 
+                    <i class="fa-regular fa-map"></i>
+                </a> O Encontro de Águas
+            </p>
+
+            <p>
+                <a href="https://maps.app.goo.gl/Vx9Ms285EhVHHKf17" class="icon"> 
+                    <i class="fa-regular fa-map"></i>
+                </a> Teatro Amazonas
+            </p>
+
+        </div>
+
+        <div class="imagem">
+            <img src="https://images.unsplash.com/photo-1544986581-efac024faf62?auto=format&fit=crop&w=1200&q=60" alt="Teatro Amazonas">
+        </div>
+
+    </section>
+
+    <br><br><br><br>
+
+    <section class="bloco-decolar">
+
+        <div class="texto">
+            <h2>Pontos de aluguel de veículo</h2>
+
+            <p>
+                Alugar um veículo no Amazonas é uma ótima opção para quem deseja circular por Manaus e seus arredores com mais praticidade. Diversos pontos de locação estão disponíveis no aeroporto e nas áreas centrais, oferecendo carros de diferentes categorias para atender perfis variados de viagem.
+            </p>
+
+            <p>
+                Com um carro disponível, o visitante pode se deslocar facilmente entre hotéis, restaurantes, terminais de barco e pontos turísticos urbanos. Além disso, é possível explorar praias de rio, trilhas e comunidades próximas, ampliando as possibilidades de conhecer a região.
+            </p>
+
+            <p>
+                O aluguel de veículos no Amazonas garante mais autonomia, segurança e flexibilidade ao turista. Assim, cada pessoa pode montar seu próprio roteiro e aproveitar ao máximo tudo o que o estado tem a oferecer.
+            </p>
+
+            <p>
+                <a href="https://maps.app.goo.gl/gNafhzEBHoWukPkV9" class="icon"> 
+                    <i class="fa-regular fa-map"></i>
+                </a> Amazon Locadora
+            </p>
+
+        </div>
+
+        <div class="imagem">
+            <img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=1200&q=60" alt="Carro na estrada">
+        </div>
+
+    </section>
+
+</body>
+</html>
